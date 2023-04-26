@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import logo from '../assets/images/logo-white-2.png'
+import logo from '../../assets/images/logo-white-2.png'
+import logo2 from '../../assets/images/logo-1.png'
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,23 +12,23 @@ function BrandExample() {
   return (
     <>
       {['lg'].map((expand) => (
-        <Navbar key={expand} bg="datrk" variant='dark' sticky='' expand={expand} className="mb-3 p-3 navbeg">
+        <Navbar key={expand} bg="" variant='dark' sticky='' expand={expand} className="mb-3 p-3 navbeg">
           <Container fluid >
+            {/* <Navbar.Brand href="#"><img src={logo} height={40} alt="logo" /></Navbar.Brand> */}
             <Navbar.Brand href="#"><img src={logo} height={40} alt="logo" /></Navbar.Brand>
-            {/* <Navbar.Brand href="#"><img src={logo} height={35} alt="logo" /></Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-            >
+            >  
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <img src={logo} alt="logo" />
+                  <img src={logo2} height={40} alt="logo" />
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3 fw-bold">
                   <Nav.Link className='me-4 navcolor' href="#action1">Home</Nav.Link>
                   <Nav.Link className='me-4 navcolor' href="#action">Contact</Nav.Link>
                   <NavDropdown className='me-4'

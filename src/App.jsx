@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import './Main.css'
-import BrandExample from './components/Navber'
-import { SearchForm } from './components/searchForm';
+import BrandExample from './components/vendors/Navber'
+import { SearchForm } from './components/vendors/searchForm';
+import { Login } from './components/pages/login';
+import { FormInputs } from './components/vendors/formInputs';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,8 @@ function App() {
           <SearchForm />
       </div>
     </div>
+    
+    <Login/>
    
    </>
   )
