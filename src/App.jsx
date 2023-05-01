@@ -1,26 +1,21 @@
 import { useState } from 'react'
-import Container from 'react-bootstrap/Container';
+import {Route, Routes} from "react-router-dom"
 import './Main.css'
-import BrandExample from './components/vendors/Navber'
-import { SearchForm } from './components/vendors/searchForm';
-import { Login } from './components/pages/login';
-import { FormInputs } from './components/vendors/formInputs';
+import NavbarComp from './components/Navber'
+import { Login } from './screens/login';
+import { Home } from './screens/home';
+import { Navbar2 } from './components/Navbar2';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <> 
-    <div className="navback">
-      <div className="overlay">
-          <BrandExample />
-          <SearchForm />
-      </div>
-    </div>
-    
-    <Login/>
-   
-   </>
+    <>
+     {/* <NavbarComp /> */}
+     <Navbar2 />
+     <Routes> 
+       <Route path='/' element={<Home />}> </Route>
+       <Route path='/register' element={< Login/>}></Route>
+    </Routes>
+    </>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FormInputs } from '../vendors/formInputs';
+import { FormInputs } from '../components/formInputs';
 
 export const Login = () => {
    const [formValues, setFormValues] = useState({
@@ -9,6 +9,7 @@ export const Login = () => {
     password : "",
     confirmpassword : "",
    });
+   const [visibility, setVisibility] = useState(false)
 
    const inputs  = [
     {
@@ -17,7 +18,7 @@ export const Login = () => {
     name: "username",
     placeholder: "Username",
     errorMessage :"Username must be 3-16 characters and shoudn't include special characters or numbers!",
-    pattern: "^[A-Za-z ]{3,50}$",
+    pattern: "^[A-Za-z0-9 ]{3,50}$",
     required : true
    },
    {
@@ -32,14 +33,15 @@ export const Login = () => {
     id:3, 
     type: "password",
     name:"password",
-    placeholder: "Password",
+    placeholder: " Password",
+    type: visibility ? "text" : "password",
     errorMessage :"Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
     pattern : "^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&* ]{8,20}$",
     required : true
    },
    {
     id:4, 
-    type: "password",
+    type: visibility ? "text" : "password",
     name: "confirmpassword",
     placeholder: "Confirm Password",
     errorMessage :"Password don't match!",
@@ -75,6 +77,8 @@ export const Login = () => {
             {...input} 
             value={formValues[input.name]} 
             onChange={onchange}
+            setvisible = {setVisibility}
+            visibility = {visibility}
             errorMessage= {input.errorMessage}/>
           ))}  
           <input type="submit" value="Register"  className='regButton'/>
