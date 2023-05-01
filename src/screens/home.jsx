@@ -1,5 +1,4 @@
 import React from 'react'
-import NavbarComp from '../components/Navber';
 import { SearchForm } from '../components/searchForm';
 
 export const Home = () => {
