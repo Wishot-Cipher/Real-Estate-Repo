@@ -247,10 +247,10 @@ display: block;
 
   @media screen and (max-width : 1050px){
     .header{
-      height: 68px;
+      height: 75px;
       padding-inline: 10px;
       padding-top: 10px;
-      position: sticky;
+      /* position: sticky; */
       top: 0px;
       background-color: #F7F7F7;
       z-index: 20;
@@ -271,7 +271,7 @@ display: block;
       right: 0;
       transition: 0.5s ease;
       width: 80%;
-      height: 105vh;
+      height: 100vh;
     }
     .slider ul .menu{
       text-align: center;
