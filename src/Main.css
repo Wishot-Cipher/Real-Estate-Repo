@@ -31,14 +31,17 @@
     /* margin: 20px; */
   }
   .text h1{
-    font-size: 60px;
+    font-size: 65px;
     margin: 20px;
+  }
+  .text p{
+    font-size: 18px;
   }
   .text .button1, .text .button2{
     height: 50px;
     width: 100px;
-    background-color: #DF4F53;
-    padding: 10px;
+    /* background-color: #DF4F53; */
+    padding: 10px 25px;
     margin: 10px;
     color: white;
     box-shadow:  5px white;
@@ -46,8 +49,8 @@
     font-size: large;
     border: 3px ridge #e0d6d3;
   }
-  .text .button2{
-    background-color: #ffffff;
+  .text .button1{
+    background-color: #DF4F53;
     color: #000;
     outline: none;
   }
@@ -242,11 +245,15 @@ display: block;
   }
 
 
-  @media screen and (max-width : 900px){
+  @media screen and (max-width : 1050px){
     .header{
       height: 68px;
       padding-inline: 10px;
       padding-top: 10px;
+      position: sticky;
+      top: 0px;
+      background-color: #F7F7F7;
+      z-index: 20;
     }
     .slider{
       min-width: 80%;
@@ -352,8 +359,11 @@ display: block;
       /* margin: 20px; */
     }
     .text h1{
-      font-size: 40px;
+      font-size: 45px;
       margin: 20px;
+    }
+    .text p{
+      font-size: 16px;
     }
     .search{
       display: block;
@@ -386,4 +396,187 @@ display: block;
       width: 100%;
     }
 
+
   }
+
+
+
+
+  #app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #F7F7F7;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 40%;
+    margin: 0px 30px;
+    display: flex;
+  }
+  
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .swiContainer{
+    padding: 10px;
+    border: 2px solid #FFFFFf;
+    height: 50vh;
+    background-color:#FFFFFF;
+  }
+  .featureCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .featureCont a{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #485665;
+  }
+  .featureCont p{
+    font-size: 16px; 
+  }
+  .featureCont h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+  }
+  .subFeatures{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .feaName{
+    padding-top: 20px;
+    color: #FF5363;
+  }
+.features h1{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+.features h1:hover, .features p:hover{
+ color: #FF5363;
+ cursor: pointer;
+}
+.features p, .cities p{
+  font-size: 14.2px;
+}
+  
+.swiper-slide img {
+    /* background-image: url(./assets/images/home-background.jpg); */
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+  }
+  .citesBackground{
+    background-color: #FFFFFF;
+    margin-top: 40px;
+  }
+  .cites h1{
+    padding-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  }
+  .cites{
+    text-align: center;
+  }
+  .citiesCont{
+    display: flex;
+    gap: 10px;
+  }
+  .cites div{
+    height: 40vh;
+  }
+  .citiesCont img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .citisImgCont{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .img1{
+    flex-grow: 8;
+  }
+  .img2{
+    flex-grow: 2;
+  }
+  .img2 img, .img1 img {
+    border-radius: 15px;
+    max-height: 50vh;
+    width: 100%;
+  }
+  @media screen and (max-width : 800px){
+    .citiesCont{
+      flex-wrap: wrap;
+    }
+    .citisImgCont{
+      display: block;
+    }
+    .img2{
+      margin-top: 10px;
+      height:50vh;
+    }
+    .img1 img, .img2 img {
+      width: 100%;
+      max-height: 50vh;
+    }
+  }
+  @media screen and (max-width : 750px){
+    .featureCont a{
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #485665;
+    }
+    .featureCont p,.cities p{
+      font-size: 14.5px; 
+    }
+    .featureCont h1,.cites h1{
+      font-size: 1.3rem;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+
+
+}
+  @media screen and (max-width : 500px){
+    .featureCont p, .cities p{
+      font-size: 13px; 
+    } 
+      .featureCont h1,.cites h1{
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      }
+
+}

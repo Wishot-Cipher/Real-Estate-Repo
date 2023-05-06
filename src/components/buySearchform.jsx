@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export const SearchForm = () => {
+export const BuySearchForm = () => {
   const [property, setProperty] = useState('property')
   const [location, setLocation] = useState("location")
   const [price, setPrice] = useState("price")
@@ -8,9 +8,9 @@ export const SearchForm = () => {
 
   const handelSubmit = (e) => {
     e.preventDefault()
-    console.log(`Selling ${property}`);
-    console.log(`Selling at ${property}`);
-    console.log(`Selling for ${property}`);
+    console.log(`Renting ${property}`);
+    console.log(`Renting at ${location}`);
+    console.log(`Renting for ${price}`);
 
     setProperty("property")
     setLocation("location")
