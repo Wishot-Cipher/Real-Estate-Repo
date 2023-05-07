@@ -246,18 +246,9 @@ display: block;
 
 
   @media screen and (max-width : 1050px){
-    .header{
-      height: 75px;
-      padding-inline: 10px;
-      padding-top: 10px;
-      /* position: sticky; */
-      top: 0px;
-      background-color: #F7F7F7;
-      z-index: 20;
-    }
     .slider{
       min-width: 80%;
-      height: 85vh;
+      height: 90vh;
       align-items: start;
       position: fixed;
       right: -100%;
@@ -310,6 +301,15 @@ display: block;
       color: rgba(5, 5, 5, 0.7);
       cursor: pointer;
       color: #fff;
+    }
+    .header{
+      height: 70px;
+      padding-inline: 10px;
+      padding-top: 10px;
+      position: sticky;
+      top: 0%;
+      background-color: #F7F7F7;
+      z-index: 20;
     }
     .largeSc{
       display: flex;

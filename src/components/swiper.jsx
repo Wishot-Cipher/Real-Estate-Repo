@@ -51,7 +51,8 @@ export const Swipers = () => {
         300:{
              width: 300,
              slidesPerView: 1,
-             spaceBetween: 15
+             spaceBetween: 15,
+            //  width: full
         },
         200:{
              width: 250,
@@ -60,6 +61,11 @@ export const Swipers = () => {
       }}
        slidesPerView={3}
         spaceBetween={30}
+        style={{"--swiper-pagination-color": '#FF5363',
+                 "--swiper-navigation-color": '#FF5363', 
+                 "--swiper-pagination-bullet-size": '8px',
+                 "--swiper-navigation-size": '35px',
+                 "--swiper-navigation-background-color": '#fff'}}
         loop={true}
         centeredSlides={true}
         autoplay={{
