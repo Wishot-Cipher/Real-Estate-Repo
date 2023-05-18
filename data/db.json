@@ -1,0 +1,139 @@
+{
+    "posts" : [
+        {
+            "id" : 1,
+            "image": "../src/assets/images/about-bg.jpg",
+            "property_type" : "Apartment",
+            "property_name" : "Luxury Family House",
+            "agent_name" : "Maurice",
+            "market_option": "For Sell",
+            "market_price": 10000,
+            "date_posted" : "4 years ago",
+            "property_location" : "19-21 3rd, Avenue Hoston",
+            "Bed": 2,
+            "Sqft": 120,
+            "Bath": 1
+        },
+        {
+            "id" : 2,
+            "image": "../src/assets/images/blog1.jpg",
+            "property_type" : "Mansion",
+           "property_name" : "Luxury Nollyhood House",
+           "agent_name" : "Wisdom",
+           "date_posted" : "2 years ago",
+            "market_option": "For Rent",
+            "market_price": 3000,
+            "property_location" : "20-18 2nd, Avenue America",
+            "Bed": 1,
+            "Sqft": 90,
+            "Bath": 1
+        },
+        {
+            "id" : 3,
+            "image": "../src/assets/images/home-background.jpg",
+            "property_type" : "Two Room Selfcom",
+            "property_name" : "Bungalow Fun House",
+            "agent_name" : "jeffery",
+            "date_posted" : "1 year ago",
+            "market_option": "For Rent",
+            "market_price": 1500,
+            "property_location" : "19-21 Ist, Avenue Hoston",
+            "Bed": 3,
+            "Sqft": 150,
+            "Bath": 2
+        },
+        {
+            "id" : 4,
+            "image": "../src/assets/images/blog2.jpg",
+            "property_type" : "Boys Quater",
+            "property_name" : "Luxury Boys House",
+            "agent_name" : "Jack",
+            "date_posted" : "2 years ago",
+            "market_option": "For Sell",
+            "market_price": 7000,
+            "property_location" : "30-21 Ist, Enugu Avenue",
+            "Bed": 2,
+            "Sqft": 130,
+            "Bath": 2
+        },
+        {
+            "id" : 5,
+            "image": "../src/assets/images/about-bg.jpg",
+            "property_type" : "Second Floor Mansion",
+            "property_name" : "Luxury Second Floor",
+            "agent_name" : "Kingson",
+            "date_posted" : "5 years ago",
+            "market_option": "For Sell",
+            "market_price": 15000,
+            "property_location" : "19-21 Ist, New Heaven Enugu",
+            "Bed": 1,
+            "Sqft": 100,
+            "Bath": 1
+        },
+        {
+            "id" : 6,
+            "image": "../src/assets/images/blog3.jpg",
+            "property_type" : "Duplex",
+            "property_name" : " Hollyhood Fun House",
+            "agent_name" : "Halkins",
+            "date_posted" : "2 years ago",
+           "market_option": "For Sell",
+           "market_price": 5000,
+           "property_location": "19-21 Ist Obiagu, Enugu",
+            "Bed": 4,
+            "Sqft": 170,
+           "Bath": 2
+        },
+        {
+            "id" : 7,
+            "image": "../src/assets/images/home-background.jpg",
+            "property_type" : "Public House",
+            "property_name" : "Luxury Family House",
+            "market_option": "For Rent",
+            "market_price": 4000,
+            "agent_name" : "Lukaku",
+            "date_posted" : "7 year ago",
+            "property_location" : "19-21 Ist Avenue, Abuja",
+            "Bed": 1,
+            "Sqft": 110,
+            "Bath": 1
+        }
+    ],
+    "testimonies" : [
+    {
+        "id" : 1,
+        "testimonialImg" : "../src/assets/images/home-background.jpg",
+        "name" : "Wisdom Alom",
+        "role" : "Sales Manager",
+        "paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, enim!"
+    },
+    {
+        "id" : 2,
+        "testimonialImg" : "../src/assets/images/me.jpg",
+        "name" : "Wishot Cipher",
+        "role" : "CEO",
+        "paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, enim!"
+    },
+    {
+        "id" : 3,
+        "testimonialImg" : "../src/assets/images/about-bg.jpg",
+        "name" : "Maurice Nice",
+        "role" : "Director",
+        "paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, enim!"
+    },
+    {
+        "id" : 4,
+        "testimonialImg" : "../src/assets/images/hero-bg.jpg",
+        "name" : "Cakahal Johnson",
+        "role" : "Chife Enrg.",
+        "paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, enim!"
+    },
+    {
+        "id" : 5,
+        "testimonialImg" : "../src/assets/images/me.jpg",
+        "name" : "Vini Junior",
+        "role" : "Chife Baller",
+        "paragraph" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, enim!"
+    }
+    ]
+}

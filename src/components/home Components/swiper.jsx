@@ -4,26 +4,25 @@ import {Link} from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Container } from "react-bootstrap"
 // Import Swiper styles
-import {allImages} from "./swiperImgs"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export const Swipers = () => {
+export const Swipers = ({posts}) => {
   return (
     <>
-    <Container fluid>
+    <Container>
     <div className="featureCont">
-          <div> <h1>Featured Properties</h1> <p>Handpicked properties by our team</p></div>
-          <div><Link> View All></Link></div>
+          <div> <h1>Featured Properties</h1> 
+          <p>Handpicked properties by our team</p></div>
     </div>
     <Swiper
       breakpoints={{
         750: {
-            width: 740,
-            slidesPerView: 2
+            width: 1115,
+            slidesPerView: 3.1
         },
         650:{
              width: 600,
@@ -43,8 +42,8 @@ export const Swipers = () => {
              slidesPerView: 1,
              spaceBetween: 20
         },
-        361:{
-             width: 340,
+        360:{
+             width: 345,
              slidesPerView: 1,
              spaceBetween: 15
         },
@@ -80,21 +79,32 @@ export const Swipers = () => {
         className="mySwiper"
       >
         {
-            allImages.map((imgs) => (
-                <SwiperSlide key={imgs.id} className="swiContainer">
-                          <div> 
-                          <img src={imgs.image} alt="" />
+            posts.map((post) => (
+                <SwiperSlide key={post.id} className="swiContainer">
+                         <div className="swiperImg">
+                            <div>
+                             <img src={post.image} alt="" />
+                             <h6>{post.market_option}</h6>
+                             {post.market_option ==="For Rent"? <h4>${post.market_price.toLocaleString()}/mo </h4> : <h4>${post.market_price.toLocaleString()} </h4>}
+                             </div>
+                         </div>
+                         <div className="features">
+                              <p className="feaName"> {post.property_type}</p>
+                              <h1>{post.property_name}</h1>
+                              <p className="location">{post.property_location}</p>
+                              <div className="subFeatures"> 
+                                  <p> <b> Bed: {post.Bed} </b></p>
+                                  <p><b>Sqft: {post.Sqft}</b> </p>
+                                  <p><b>Bath: {post.Bath}</b> </p>
+                              </div>
+                              <hr />
                           </div>
-                          <div className="features">
-                           <p className="feaName"> {imgs.property_type}</p>
-                           <h1>{imgs.property_name}</h1>
-                           <p className="location">{imgs.property_location}</p>
-                           <div className="subFeatures"> 
-                            <p> <b> Bed: {imgs.Bed} </b></p>
-                             <p><b>Sqft: {imgs.Sqft}</b> </p>
-                              <p><b>Bath: {imgs.Bath}</b> </p>
-                           </div>
-                          </div>
+                              <div className="profileCont">
+                                <div className="profileImg">
+                                  <img src={post.image} alt="" /> <h6>Agent {post.agent_name}</h6>
+                                </div>
+                                <div className="datePosted"> <h6> {post.date_posted}</h6></div>
+                              </div>
                   </SwiperSlide>
               
             ))

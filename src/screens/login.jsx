@@ -60,9 +60,9 @@ export const Login = () => {
     
     setFormValues({
       username : "",
-    email : "",
-    password : "",
-    confirmpassword : "",
+      email : "",
+      password : "",
+      confirmpassword : "",
     })
 
    }

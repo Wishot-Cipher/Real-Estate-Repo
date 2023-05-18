@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export const BuySearchForm = () => {
+export const RentSearchForm = () => {
   const [property, setProperty] = useState('property')
   const [location, setLocation] = useState("location")
   const [price, setPrice] = useState("price")
@@ -17,7 +17,7 @@ export const BuySearchForm = () => {
     setPrice("price")
   }
   return (
-    <div>
+    <div >
         <form action="" onSubmit={handelSubmit} className="search">
         <select name="Property type" id="Property type" value={property} onChange={(e)=> setProperty(e.target.value)}>
         <option value="property">Property</option>
