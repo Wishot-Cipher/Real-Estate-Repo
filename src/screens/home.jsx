@@ -17,7 +17,7 @@ import { Footer } from '../components/footer'
 
 export const Home = () => {
 
-  const { data : posts , loading} = useFeach("http://localhost:8000/posts");
+  const { data : posts , loading} = useFeach("https://real-eastate-json-server.onrender.com/posts");
   const navLinkStyles = ({isActive}) => {
     return {
       fontWeight : isActive ? "bold" : "normal",

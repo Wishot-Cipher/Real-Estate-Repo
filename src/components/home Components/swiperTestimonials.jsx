@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export const SwiperTestimonials = () => {
-  const { data : testimonials , loading} = useFeach(" http://localhost:8000/testimonies");
+  const { data : testimonials , loading} = useFeach("https://real-eastate-json-server.onrender.com/testimonies");
 
   return (
     <>
