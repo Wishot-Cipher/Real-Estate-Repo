@@ -276,6 +276,7 @@ display: block;
     height: 40%;
     margin: 0px 30px;
     display: flex;
+    /* justify-content: center; */
   }
   
   .swiper-slide{
@@ -340,13 +341,17 @@ display: block;
   }
   .subFeatures{
     display: flex;
-    width: 70%;
+    width: 60%;
     justify-content: space-between;
     font-size: 15px;
   }
   .feaName{
     padding-top: 20px;
     color: #FF5363;
+  }
+  .features a{
+    color: initial;
+    text-decoration: none;
   }
 .features h1{
   font-size: 16px;
@@ -370,8 +375,8 @@ display: block;
     display: block;
     width: 100%;
     height: 200px;
-    border-radius: 10px 10px 0px 0px;
     object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
   }
   .citesBackground{
     background-color: #FFFFFF;
@@ -692,6 +697,334 @@ color: #F7F7F7;
 .copywrite{
   color:rgba(252, 248, 248, 0.7);
 }
+.propertiesHeader{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.headerLinks{
+  display: flex;
+  gap: 5px;
+}
+.headerLinks a{
+  text-decoration: none;
+  color: #555454;
+}
+.headerLinks a:hover{
+  color: #DF4F53;
+}
+.headerLinks h6{
+  font-weight: 550;
+}
+.propertiesContainer{
+  display: flex;
+}
+.latestprop{
+  flex-basis: 30%;
+}
+.propertyList{
+  flex-basis: 70%;
+  margin-block: 20px;
+}
+.SinglePropCont:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.SinglePropCont{
+  display: flex;
+  gap: 10px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contBackground{
+  background-color: #FFFFFF;
+}
+.contBackground a{
+  color:initial;
+ text-decoration: none;
+ /* list-style: none; */
+}
+.secondPropDetail{
+  display: none;
+}
+.propImageCont{
+  flex-basis: 40%;
+}
+.propImageCont img{
+  display: block;
+  width: 100%;
+  min-width: 35%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.detailProfile img{
+  width: 50px;
+  height: 50px;
+  border: 0px;
+}
+.propDetailCont{
+  flex-basis: 65%;
+  padding-top: 20px;
+}
+.moreDetail{
+  line-height: 0px;
+}
+.moreDetail h4{
+  font-weight: 550;
+}
+.moreDetail h4:hover{
+  color: #DF4F53;
+}
+.moreDetail p:nth-child(1){
+  margin-top: 5px;
+  font-size: 15px;
+  color: #fa5459;
+}
+.propOptions{
+  display: flex;
+  justify-content: space-between;
+}
+.marketOptCont{
+  display: flex;
+  justify-content: space-around;
+}
+.marketOption{
+  background-color: #2F3B59;
+  color: white;
+  /* padding: 3px; */
+  border: none;
+  height: fit-content;
+  max-height: fit-content;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-right: 4px;
+}
+.forInfo{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.detailPrice h4,
+.propDetailOverview h4,
+.marketPrice h4,
+.detailContactform h4{
+  font-weight: 550;
+  background-color: rgba(12, 14, 20, 0.9);
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+.featured{
+  background-color: #f84248;
+  color: white;
+  /* padding: 2px; */
+  border: none;
+  height: fit-content;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.activeLink{
+  color: #f84248;
+}
+
+.latestprop .search{
+  display: block;
+  background-color: rgb(107, 100, 100,0.2);
+  /* box-shadow:  0 4px 8px 0 rgba(252, 251, 251, 0.952), 0 6px 20px 0 rgba(241, 238, 238, 0.938); */
+  padding: 10px;
+  border-radius: 10px;
+  width: 30vw;
+  margin: 0px 10px;
+}
+.latestprop .search select:nth-child(1),
+.latestprop .search select:nth-child(2),
+.latestprop .search select:nth-child(3){
+  width: 27vw;
+  margin: 10px auto;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+}
+.latestprop .search input[type="submit"]{
+  width: 20vw;
+  margin: 10px auto;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+}
+.latestprop .search:hover{
+  box-shadow:  0 4px 8px 0 rgba(153, 148, 148, 0.952), 0 6px 20px 0 rgba(141, 139, 139, 0.938);
+}
+marquee{
+  margin-top: 10px;
+  margin-inline: 20px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #555353;
+}
+.headName{
+  text-align: center;
+  display: block;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 35px;
+  font-weight: 550;
+  color: rgb(77, 77, 77);
+  text-decoration: underline;
+}
+.detailCont{
+
+}
+.detailImg1 {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+.detailImg1 img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px 0px 0px;
+  /* object-position:inherit; */
+}
+.detailHeaderCont{
+  display: flex;
+  justify-content: space-between;
+  margin-block: 40px;
+  margin-inline-end: 20px;
+}
+.headerFlex{
+  display: flex;
+  /* align-items: center; */
+  justify-content: left;
+}
+.headerFlex h4{
+  margin-inline-end: 5px;
+  font-weight: 550;
+}
+.headerFlex button{
+  background-color: rgb(132, 196, 36);
+}
+.detailPrice h4{
+  font-weight: 550;
+  font-size: 26px;
+}
+.detailBodycont{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.detailBodyContDivHouse{
+  flex-basis: 65%;
+}
+.propDetailOverview{
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 5px;
+}
+.propDetailOverview:hover{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.detailContactform{
+  flex-basis: 32%;
+}
+.detailContatDivHouse{
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+}
+.detailContatDivHouse:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.propdetailSubSection{
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.propdetailSubSection h6{
+  margin-inline: 10px;
+  padding: 7px 10px;
+  background-color: #f3f2f2ee;
+  font-size: 15px;
+  border-radius: 3px;
+} 
+.propdetailSubSection h6:nth-child(1){
+  color: #DF4F53;
+}
+.DetailprofileImage img{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 60px;
+  /* margin-right: 15px; */
+}
+.agentContactDetails{
+  display: flex;
+  justify-content: left;
+}
+.emailContact{
+  margin: 20px;
+  margin-right: 10px;
+}
+.emailContact button{
+  background-color: #202040;
+  color: #F7F7F7;
+}
+.detailContatDivHouse form{
+  width: 100%;
+  display: block;
+  margin-block: 30px;
+}
+.detailContactform  input, textarea{
+  height: 50px;
+  width: 100%;
+  border: 2px solid rgb(184, 182, 182);
+  padding-inline: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+textarea{
+  height:18% ;
+}
+.details{
+  margin-block: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+.details:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.details h5{
+  font-weight: 550;
+}
+.detailsFlex{
+  display: flex;
+  justify-content:left;
+  gap: 70px;
+}
+.detailFlexLeft, .detailFlexRight{
+  flex-basis: 40%;
+}
+.detailFlexLeft div,.detailFlexRight div {
+ display: flex;
+ justify-content: space-between;
+ margin-block: 20px;
+ gap: 10px;
+ /* border: 2px solid black; */
+}
+.detailFlexRight div h6:nth-child(1), .detailFlexLeft div h6:nth-child(1){
+  font-weight:550 ;
+  color: #696767;
+}
+.detailFlexRight div h6:nth-child(2), .detailFlexLeft div h6:nth-child(2){
+  flex-basis: 30%;
+  font-weight: 550;
+}
+
 
      /* MEDIA QUERY  => FOR RESPONSIVENESS */
 
@@ -809,7 +1142,7 @@ color: #F7F7F7;
       margin-top: 10px;
     }
     .serviceContent > div{
-      margin-top: 30px;
+      /* margin-top: 30px; */
       padding-top: 10px;
     }
     .col{
@@ -829,6 +1162,15 @@ color: #F7F7F7;
     }
     .followLink input{
       width: 100%;
+    }
+    .detailImg1{
+      height: 45vh;
+    } 
+    .detailBodycont{
+      display: block;
+    }
+    .propDetailOverview{
+      margin-bottom: 20px;
     }
 
   }
@@ -853,7 +1195,6 @@ color: #F7F7F7;
     }
     .search{
       display: block;
-      box-shadow:  0 4px 8px 0 rgba(252, 251, 251, 0.952), 0 6px 20px 0 rgba(241, 238, 238, 0.938);
       padding: 10px;
       border-radius: 10px;
       width: 90vw;
@@ -897,7 +1238,7 @@ color: #F7F7F7;
     }
     .img1 img, .img2 img {
       width: 100%;
-      height: 40%;
+      height: 50%;
       object-fit: cover;
     }
     .footer{
@@ -907,7 +1248,47 @@ color: #F7F7F7;
       margin-top: 30px;
       padding-bottom: 5px;
     }
+    .latestprop{
+      flex-basis: 100%;
+      padding-right: 0px;
+      display: none;
+    }
+    .latestprop .search{
+      width: 90%;
+      margin-left: 20px;
+      gap: 0px;
+      text-align: center;
 
+    }
+    .latestprop .search select:nth-child(1),
+    .latestprop .search select:nth-child(2),
+    .latestprop .search select:nth-child(3){
+      width: 95%;
+    }
+    .propertyList{
+      flex-basis: 100%;
+    }
+    .propImageCont{
+      flex-basis: 35%;
+    }
+    .propImageCont img{
+      height: 140px;
+    }
+    .propDetailCont{
+      padding-top: 0px;
+    }
+    .detailProfile{
+      display: none;
+    }
+    .detailImg1 {
+      height: 40vh;
+    }
+    .detailsFlex{
+      display: block;
+    }
+    .propertiesContainer{
+      display: block;
+    }
   }
 
   @media screen and (max-width : 750px){
@@ -943,6 +1324,41 @@ color: #F7F7F7;
       padding-top:  5%;
     }
 }
+@media (width <= 650px){
+  .propDetailCont .forInfo{
+    display: none;
+  }
+  .secondPropDetail{
+    display: flex;
+    /* flex-basis: 100%; */
+    padding-top: 0px;
+    width: 100%;
+  }
+  .forInfoTwo{
+    width: 80%;
+    display: flex;
+  }
+  .secondPropDetail p{
+    padding-inline: 10px;
+  }
+  .contBackground:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .SinglePropCont:hover{
+    box-shadow: none;
+  }
+  .marketOptCont{
+    flex-wrap: wrap;
+    justify-content: left;
+    /* margin-top: 0px; */
+  }
+  .detailImg1 {
+    height: 30vh;
+  }
+  .headerFlex{
+    display: block;
+  }
+}
   @media screen and (max-width : 500px){
     .featureCont p, .cites p, .article p{
       font-size: 14px; 
@@ -962,5 +1378,27 @@ color: #F7F7F7;
       .quoteIcon{
         left: 62%;
       }
-
+      .SinglePropCont{
+        gap: 5px;
+      }
+      .propImageCont img{
+        height: 120px;
+        /* width: 120px; */
+      }
+      .featured,.marketOption{
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      .detailPrice h4{
+        font-size: 23px;
+      }
+}
+@media (width <= 350px){
+  .moreDetail{
+    line-height: 15px;
+  }
+  .propImageCont img{
+    height: 120px;
+    width: 120px;
+  }
 }

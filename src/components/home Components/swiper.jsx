@@ -3,6 +3,8 @@ import {Link} from "react-router-dom"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Container } from "react-bootstrap"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -83,17 +85,19 @@ export const Swipers = ({posts}) => {
                 <SwiperSlide key={post.id} className="swiContainer">
                          <div className="swiperImg">
                             <div>
-                             <img src={post.image} alt="" />
-                             <h6>{post.market_option}</h6>
-                             {post.market_option ==="For Rent"? <h4>${post.market_price.toLocaleString()}/mo </h4> : <h4>${post.market_price.toLocaleString()} </h4>}
+                              <img src={post.image} alt="" />
+                              <h6>{post.market_option}</h6>
+                              {post.market_option ==="For Rent"? <h4>${post.market_price.toLocaleString()}/mo </h4> : <h4>${post.market_price.toLocaleString()} </h4>}
                              </div>
                          </div>
                          <div className="features">
                               <p className="feaName"> {post.property_type}</p>
-                              <h1>{post.property_name}</h1>
-                              <p className="location">{post.property_location}</p>
+                              <Link to={`/properties/${post.id}`}>
+                                 <h1>{post.property_name}</h1>
+                              </Link>
+                              <p className="location"><i><FontAwesomeIcon icon={faLocationDot}/> </i> {post.property_location}</p>
                               <div className="subFeatures"> 
-                                  <p> <b> Bed: {post.Bed} </b></p>
+                                  <p><b> Bed: {post.Bed} </b></p>
                                   <p><b>Sqft: {post.Sqft}</b> </p>
                                   <p><b>Bath: {post.Bath}</b> </p>
                               </div>

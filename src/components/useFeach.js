@@ -18,7 +18,7 @@ useEffect(() => {
     })
     }, []);
 
-    return{data, loading}
+    return{data, loading, setData}
 
 }
 export default useFeach;

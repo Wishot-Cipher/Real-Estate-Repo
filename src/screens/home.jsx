@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react'
-import { NavLink, Outlet} from  "react-router-dom"
+import { NavLink, Outlet,useNavigate} from  "react-router-dom"
 import swiperImg2 from "../assets/images/home-background.jpg"
 import swiperImg4 from "../assets/images/about-bg.jpg"
 import brandLogo1 from "../assets/images/brand01.png"
@@ -17,7 +17,7 @@ import { Footer } from '../components/footer'
 
 export const Home = () => {
 
-  const { data : posts , loading} = useFeach("https://real-eastate-json-server.onrender.com/posts");
+  const { data : posts , loading, setData} = useFeach("https://real-eastate-json-server.onrender.com/posts");
   const navLinkStyles = ({isActive}) => {
     return {
       fontWeight : isActive ? "bold" : "normal",

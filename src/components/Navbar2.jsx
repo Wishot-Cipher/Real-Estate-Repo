@@ -50,8 +50,8 @@ export const Navbar2 = () => {
                 <NavLink to="/" onClick={showMenu} style={navLinkStyles}> 
                     <li> Home </li>
                 </NavLink>
-                <NavLink to="/members" onClick={showMenu} style={navLinkStyles}>
-                    <li>  Members  </li>
+                <NavLink to="/properties" onClick={showMenu} style={navLinkStyles}>
+                    <li>  Properties  </li>
                 </NavLink>
                 <NavLink to="/about" onClick={showMenu} style={navLinkStyles}> 
                     <li>  About  </li> 
